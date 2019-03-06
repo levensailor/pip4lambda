@@ -19,8 +19,3 @@ for package in packages:
     create_arn(package.rstrip('\n'))
 
 packages.close()
-
-#call('echo "I like potatos"', shell=True)
-
-#call('cd ~/Dev/amazonlayers', shell=True)
-#call('mkdir ~/Dev/amazonlayers/'+pkg, shell=True)
