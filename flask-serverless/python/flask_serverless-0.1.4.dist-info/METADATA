@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: flask-serverless
+Version: 0.1.4
+Summary: AWS Lambda easy integration with Flask web framework.
+Home-page: https://github.com/revmischa/flask-serverless
+Author: Mischa Spiegelmock
+Author-email: mischa@mvstg.biz
+License: WTFPL
+Platform: any
+Classifier: License :: OSI Approved
+Classifier: Framework :: Flask
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+Requires-Dist: flask-cors
+Requires-Dist: boto3
+Requires-Dist: flask-apispec
+Requires-Dist: apispec
+Requires-Dist: marshmallow
+Requires-Dist: aws-lambda-wsgi
+
+# Quickstart
+To create a new serverless Flask application really quickly:
+
+1. Install pipenv and AWS SAM local and generate app boilerplate:
+  ```sh
+  pip install aws-sam-cli pipenv
+  sam init --location https://github.com/aws-samples/cookiecutter-aws-sam-python
+  ```
+2. Add `flask_serverless` dependency
+  ```sh
+  cd MyApp
+  make install
+  pipenv install flask_serverless
+  ```
+3. Replace `first_function/app.py` contents with:
+  ```python
+  from flask_serverless import Serverless, Flask, APIGWProxy
+
+  app = Flask(__name__)
+  Serverless(app)
+  lambda_handler = APIGWProxy(app)
+
+  @app.route('/')
+  def index():
+      return "Hello, friend!"
+  ```
+4. You're ready to go! Run `make run`. Read the README it spits out.
+
+
+### More Coming...
+More documentation will be written soon.
+
+### Further Reading
+[Serverless Flask applications on AWS lambda.](https://spiegelmock.com/2018/09/06/serverless-python-web-applications-with-aws-lambda-and-flask/)
+
+

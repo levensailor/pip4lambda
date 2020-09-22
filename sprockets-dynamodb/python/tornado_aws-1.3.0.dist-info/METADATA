@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: tornado-aws
+Version: 1.3.0
+Summary: A low-level Amazon Web Services API client for Tornado
+Home-page: https://tornado-aws.readthedocs.io
+Author: Gavin M. Roy
+Author-email: gavinmroy@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Provides-Extra: curl
+Requires-Dist: pycurl ; extra == 'curl'
+
+tornado-aws
+===========
+A low-level Amazon Web Services API client for Tornado
+
+|Version| |Status| |Coverage| |License|
+
+Installation
+------------
+``tornado-aws`` may be installed via the Python package index with the tool of
+your choice. I prefer pip:
+
+.. code:: bash
+
+    pip install tornado-aws
+
+Example
+-------
+
+.. code:: python
+
+    import json
+    import pprint
+
+    import tornado_aws
+    from tornado import gen, ioloop
+
+    HEADERS = {'Content-Type': 'application/x-amz-json-1.0',
+               'x-amz-target': 'DynamoDB_20120810.DescribeTable'}
+    PAYLOAD = {'TableName': 'my-dynamodb-table'}
+
+    _ioloop = ioloop.IOLoop.instance()
+
+    @gen.coroutine
+    def async_request():
+        client = tornado_aws.AsyncAWSClient('dynamodb')
+        response = yield client.fetch('POST', '/', headers=HEADERS,
+                                      body=json.dumps(PAYLOAD))
+        x = json.loads(response.body.decode('utf-8'))
+        pprint.pprint(x)
+        _ioloop.stop()
+
+    _ioloop.add_callback(async_request)
+    _ioloop.start()
+
+
+Documentation
+-------------
+Documentation is available on `ReadTheDocs <https://tornado-aws.readthedocs.org>`_.
+
+Requirements
+------------
+-  `Tornado <https://tornadoweb.org>`_
+
+Version History
+---------------
+Available at https://tornado-aws.readthedocs.org/en/latest/history.html
+
+.. |Version| image:: https://img.shields.io/pypi/v/tornado-aws.svg?
+   :target: http://badge.fury.io/py/tornado-aws
+
+.. |Status| image:: https://img.shields.io/travis/gmr/tornado-aws.svg?
+   :target: https://travis-ci.org/gmr/tornado-aws
+
+.. |Coverage| image:: https://img.shields.io/codecov/c/github/gmr/tornado-aws.svg?
+   :target: https://codecov.io/github/gmr/tornado-aws?branch=master
+
+.. |License| image:: https://img.shields.io/pypi/l/tornado-aws.svg?
+   :target: https://tornado-aws.readthedocs.org
+
+

@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: aws-lambda-wsgi
+Version: 0.0.4
+Summary: AWS Lambda WSGI - WSGI adapter for AWS API Gateway/Lambda Proxy Integration
+Home-page: https://github.com/truckpad/aws-lambda-wsgi
+Author: Marcos Araujo Sobrinho
+Author-email: marcos.sobrinho@truckpad.com.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Description-Content-Type: text/markdown
+
+aws-lambda-wsgi
+===============
+
+A WSGI adapter for AWS API Gateway/Lambda Proxy Integration
+-----------------------------------------------------------
+
+AWS-Lambda-WSGI allows you to use WSGI-compatible middleware and frameworks like Bottle, Django and Flask with the [AWS API Gateway/Lambda proxy integration](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-set-up-simple-proxy.html).
+
+Based on [awsgi, by Matthew Wedgwood](https://github.com/slank/awsgi).
+
+Installation
+------------
+
+`aws_lambda_wsgi` is available from PyPI as `aws_lambda_wsgi`:
+
+```
+pip install aws_lambda_wsgi
+```
+
+Example
+-------
+
+```python
+import aws_lambda_wsgi
+from bottle import Bottle
+
+app = Bottle()
+
+
+@app.route('/')
+def index():
+    return {'message': 'OK'}
+
+
+def lambda_handler(event, context):
+    return aws_lambda_wsgi.response(app, event, context)
+```
+

@@ -10,7 +10,7 @@ def create_arn(package):
     call('cp build.sh '+package, shell=True)
     os.system('cd %s && ./build.sh' % (package))
     os.system('cd %s && zip -r py-%s.zip .' % (package, package))
-    os.system('cd %s && aws lambda publish-layer-version --layer-name %s --zip-file fileb://py-%s.zip' %(package,package,package))
+    os.system('cd %s && aws lambda publish-layer-version --compatible-runtimes python3.6 python3.7 --layer-name %s --zip-file fileb://py-%s.zip --region us-east-1' %(package,package,package))
     print('Successfully created ARN for: %s'% (package))
 
 

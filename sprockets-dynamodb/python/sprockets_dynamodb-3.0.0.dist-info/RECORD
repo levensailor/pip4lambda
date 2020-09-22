@@ -1,0 +1,17 @@
+sprockets_dynamodb-3.0.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+sprockets_dynamodb-3.0.0.dist-info/LICENSE,sha256=Eh0gYNDtY_WlGOlL3qt1cSkQoyGa4lbWTqNcjf50hOE,1493
+sprockets_dynamodb-3.0.0.dist-info/METADATA,sha256=J8ZeV2z4PI8KyBPBe2bZ1I2xsYUk-dM-ng_GC28KX74,1188
+sprockets_dynamodb-3.0.0.dist-info/RECORD,,
+sprockets_dynamodb-3.0.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+sprockets_dynamodb-3.0.0.dist-info/top_level.txt,sha256=In0TqIZeEg6syLOUcLNeGwZ0t4aZx-L2etI4Fy9Vqh8,19
+sprockets_dynamodb-3.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sprockets_dynamodb/__init__.py,sha256=txZ4RNHJw_TQa74W9nEojZmLe39nFZeyNl0deFhv3Ls,1609
+sprockets_dynamodb/__pycache__/__init__.cpython-36.pyc,,
+sprockets_dynamodb/__pycache__/client.cpython-36.pyc,,
+sprockets_dynamodb/__pycache__/exceptions.cpython-36.pyc,,
+sprockets_dynamodb/__pycache__/mixin.cpython-36.pyc,,
+sprockets_dynamodb/__pycache__/utils.cpython-36.pyc,,
+sprockets_dynamodb/client.py,sha256=3rc_185-3fYyFntkBtzGeMDiWO_x-N2RXIWuOQJbGPI,49399
+sprockets_dynamodb/exceptions.py,sha256=2OQlZysxk1wRvHAlxpTNFWFr-t2ZsvFH5ZkYpY4dj6E,5906
+sprockets_dynamodb/mixin.py,sha256=yOMGxa8njSFa1bzNmgz14eguMurbbzb4gcUWJbW-YWI,2487
+sprockets_dynamodb/utils.py,sha256=7ggoWeEm7Sc-9QeV2ywmUfAf_ITfg9kuC_6GVYYM27E,5527

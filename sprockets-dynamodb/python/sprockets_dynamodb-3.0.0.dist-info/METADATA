@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sprockets-dynamodb
+Version: 3.0.0
+Summary: DynamoDB client and mixin for Tornado applications
+Home-page: https://github.com/sprockets/sprockets-dynamodb
+Author: AWeber Communications
+Author-email: api@aweber.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: tornado-aws (<2,>=1.3)
+Requires-Dist: tornado (<6,>=5.0)
+Provides-Extra: influxdb
+Requires-Dist: sprockets-influxdb (<3,>=2) ; extra == 'influxdb'
+
+UNKNOWN
+
+

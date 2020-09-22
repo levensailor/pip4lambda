@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: webexpy
+Version: 2.2.6
+Summary: Python WebEx Api Wrapper
+Home-page: https://github.com/prior/webexpy
+Author: Michael Prior
+Author-email: prior@cracklabs.com
+License: UNKNOWN
+Download-URL: https://github.com/prior/webexpy/tarball/v2.2.6
+Platform: UNKNOWN
+Requires-Dist: lxml (==2.3.1)
+Requires-Dist: nose (==1.1.2)
+
+UNKNOWN
+
+

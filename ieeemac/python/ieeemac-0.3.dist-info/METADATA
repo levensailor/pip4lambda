@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ieeemac
+Version: 0.3
+Summary: Parse and convert MAC addresses
+Home-page: UNKNOWN
+Author: Justin Azoff
+Author-email: JAzoff@uamail.albany.edu
+License: MIT
+Keywords: MAC ethernet
+Platform: UNKNOWN
+Classifier: Topic :: System :: Networking
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+
+Parses, finds, and converts MAC addresses between the following formats:
+* bare:    001122334455
+* windows: 00-11-22-33-44-55
+* unix:    00:11:22:33:44:55
+* cisco:   0011.2233.4455
+
+

@@ -1,0 +1,17 @@
+tornado_aws-1.3.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+tornado_aws-1.3.0.dist-info/LICENSE,sha256=CZi1Td8Fz9wEtfTSbiKiho0XZ0k-w2e-tF4KAym93Ps,1489
+tornado_aws-1.3.0.dist-info/METADATA,sha256=TdmvLhxrtQObDOyxSVEGsmLQDqHFFodFxv_nGXE9Eus,2905
+tornado_aws-1.3.0.dist-info/RECORD,,
+tornado_aws-1.3.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+tornado_aws-1.3.0.dist-info/top_level.txt,sha256=sBysSTd7_NlHz5PH4m-d7wMnIOxOMNXv49lMbx2O3TY,12
+tornado_aws-1.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tornado_aws/__init__.py,sha256=7RjEiI1QZOfdXu9G4OsYjY7AjO_lJ211i3aHsR5Ihg0,253
+tornado_aws/__pycache__/__init__.cpython-36.pyc,,
+tornado_aws/__pycache__/client.cpython-36.pyc,,
+tornado_aws/__pycache__/config.cpython-36.pyc,,
+tornado_aws/__pycache__/exceptions.cpython-36.pyc,,
+tornado_aws/__pycache__/txml.cpython-36.pyc,,
+tornado_aws/client.py,sha256=PhwReJzdIVtXwSpmy4sVhErqwVzOmS0b43u-iLPjUyE,25365
+tornado_aws/config.py,sha256=L5eEkW4pDRl3EUv1Hnze-fePBrOUdI2ElqxJFUWwzJs,13474
+tornado_aws/exceptions.py,sha256=Motf1G0XPAWUHbjA2CaRefFH0ogVZFeEnH482nt4piM,2037
+tornado_aws/txml.py,sha256=sVNC7a1RJKrXFe1OJmP-NMMaRKW8_IgLxPxCAXjXS7Q,1256

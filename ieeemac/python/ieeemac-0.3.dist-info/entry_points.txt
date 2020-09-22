@@ -1,0 +1,4 @@
+[console_scripts]
+ieeemac = ieeemac:main
+ieeemac-extract = ieeemac.mac_extract:main
+

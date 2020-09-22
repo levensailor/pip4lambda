@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: napalm
+Version: 2.4.0
+Summary: Network Automation and Programmability Abstraction Layer with Multivendor support
+Home-page: https://github.com/napalm-automation/napalm
+Author: David Barroso, Kirk Byers, Mircea Ulinic
+Author-email: dbarrosop@dravetech.com, ping@mirceaulinic.net, ktbyers@twb-tech.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Requires-Dist: setuptools (>=38.4.0)
+Requires-Dist: cffi (>=1.11.3)
+Requires-Dist: paramiko (>=2.4.2)
+Requires-Dist: future
+Requires-Dist: textfsm
+Requires-Dist: jinja2
+Requires-Dist: netaddr
+Requires-Dist: pyYAML
+Requires-Dist: pyeapi (>=0.8.2)
+Requires-Dist: netmiko (>=2.3.0)
+Requires-Dist: pyIOSXR (>=0.53)
+Requires-Dist: junos-eznc (>=2.2.0)
+Requires-Dist: nxapi-plumbing (>=0.5.2)
+Requires-Dist: scp
+
+UNKNOWN
+
+
